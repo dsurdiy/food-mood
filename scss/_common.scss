@@ -1,4 +1,42 @@
 body {
    font-family: "Poppins", sans-serif;
    font-weight: 400;
+   font-size: 17px;
+   color: $blackColor;
+   line-height: 1.5;
+}
+
+.wrapper {
+   max-width: 1440px;
+   min-height: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 209px;
+   height: 48px;
+   padding: 10px;
+   background-color: $accentColor;
+   text-align: center;
+   font-size: 14px;
+   font-weight: 700;
+   transition: background-color 0.3s ease;
+   &:hover {
+      background-color: #c7a109;
+   }
 }
