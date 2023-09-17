@@ -5,12 +5,13 @@
 @import "common";
 
 /* =================== HEADER styles =================== */
+
 .header {
-   background: #000;
+   // background: #000;
 
    &__container {
       min-height: 120px;
-      padding: 35px 0;
+      padding: 35px 15px;
       color: #fff;
       text-transform: uppercase;
       display: flex;
@@ -53,7 +54,77 @@
    }
 }
 
-/* ===================  =================== */
+/* =================== TOP styles =================== */
+
+.top {
+   padding-top: 31px;
+
+   &__container {
+      color: #fff;
+   }
+
+   &__price {
+      font-size: 26px;
+      font-weight: 700;
+      &:not(:last-child) {
+         margin-bottom: 25px;
+      }
+   }
+
+   &__title {
+      font-size: 64px;
+      font-weight: 600;
+      &:not(:last-child) {
+         margin-bottom: 25px;
+      }
+   }
+
+   &__box {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      &:not(:last-child) {
+         margin-bottom: 80px;
+      }
+   }
+
+   &__discount {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 205px;
+      height: 205px;
+      border-radius: 50%;
+      background-color: $accentColor;
+      font-weight: 700;
+      font-size: 32px;
+   }
+
+   &__discount-price {
+      font-size: 64px;
+      line-height: 1;
+   }
+
+   &__discount-text {
+      max-width: 330px;
+      font-size: 36px;
+      font-weight: 600;
+   }
+
+   &__btn {
+   }
+
+   &__image {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      img {
+         max-width: 100%;
+      }
+   }
+}
+
 /* ===================  =================== */
 /* ===================  =================== */
 /* ===================  =================== */
