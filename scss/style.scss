@@ -176,6 +176,7 @@
       gap: 30px;
    }
 }
+
 .item-features {
    display: flex;
    flex-direction: column;
@@ -203,7 +204,52 @@
    }
 }
 
-/* ===================  =================== */
+/* =================== OUTLETS style =================== */
+
+.outlets {
+   padding-top: 75px;
+
+   &__top {
+      margin-bottom: 25px;
+   }
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+   }
+
+   &__item {
+   }
+}
+
+.item-outlets {
+   &__image {
+      img {
+         max-width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__address {
+      padding: 63px 15px 44px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      position: relative;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 20px;
+         left: 50%;
+         width: 21px;
+         height: 33px;
+         background-image: url("../img/icons/map.svg");
+      }
+   }
+}
+
 /* ===================  =================== */
 /* ===================  =================== */
 /* ===================  =================== */
