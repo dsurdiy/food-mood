@@ -7,7 +7,10 @@
 /* =================== HEADER styles =================== */
 
 .header {
-   // background: #000;
+   position: fixed;
+   left: 0;
+   right: 0;
+   z-index: 10;
 
    &__container {
       min-height: 120px;
@@ -57,7 +60,9 @@
 /* =================== TOP styles =================== */
 
 .top {
-   padding-top: 31px;
+   position: relative;
+   padding-top: 150px;
+   padding-bottom: 195px;
 
    &__container {
       color: #fff;
@@ -125,7 +130,44 @@
    }
 }
 
-/* ===================  =================== */
+/* =================== CATEGORIES styles =================== */
+
+.categories {
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+   }
+}
+
+.item-categories {
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 40px 5px;
+
+   &__image {
+      max-width: 100%;
+      margin-top: auto;
+   }
+
+   &__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: auto;
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
+   }
+
+   &__count {
+      font-size: 20px;
+      font-weight: 600;
+   }
+}
+
 /* ===================  =================== */
 /* ===================  =================== */
 /* ===================  =================== */

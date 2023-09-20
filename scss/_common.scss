@@ -41,3 +41,17 @@ body {
       background-color: #c7a109;
    }
 }
+
+.section-top {
+   text-align: center;
+   font-weight: 600;
+   &__label {
+      font-size: 18px;
+      color: $accentColor;
+      text-transform: uppercase;
+   }
+
+   &__title {
+      font-size: 55px;
+   }
+}
