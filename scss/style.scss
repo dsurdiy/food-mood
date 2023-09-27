@@ -312,7 +312,57 @@
    }
 }
 
-/* ===================  =================== */
+/* =================== TEAM styles =================== */
+
+.team {
+   padding: 50px 0;
+
+   &__top {
+      margin-bottom: 75px;
+
+      &::after {
+         content: "";
+         display: inline-block;
+         width: 205px;
+         height: 5px;
+         background-color: $accentColor;
+      }
+   }
+
+   &__items {
+      display: flex;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 30px;
+   }
+}
+
+.item-team {
+   padding-bottom: 15px;
+
+   &__image {
+      max-width: 277px;
+      &:not(:last-child) {
+         margin-bottom: 35px;
+      }
+
+      img {
+         max-width: 100%;
+      }
+   }
+
+   &__title {
+      font-size: 24px;
+      font-weight: 600;
+      &:not(:last-child) {
+         margin-bottom: 13px;
+      }
+   }
+
+   &__position {
+      font-size: 20px;
+   }
+}
+
 /* ===================  =================== */
 /* ===================  =================== */
 /* ===================  =================== */
