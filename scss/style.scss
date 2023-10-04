@@ -363,7 +363,48 @@
    }
 }
 
-/* ===================  =================== */
+/* =================== APP styles =================== */
+
+.app {
+   background: linear-gradient(91deg, #fc0 17.25%, rgba(255, 204, 0, 0) 178.38%);
+   padding: 100px 0;
+   color: #fff;
+
+   &__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+      align-items: center;
+   }
+
+   &__title {
+      font-size: 55px;
+      font-weight: 700;
+      &:not(:last-child) {
+         margin-bottom: 32px;
+      }
+   }
+
+   &__text {
+      font-size: 26px;
+      font-weight: 600;
+      &:not(:last-child) {
+         margin-bottom: 70px;
+      }
+   }
+
+   &__links {
+      display: flex;
+      gap: 12px;
+   }
+
+   &__image {
+      img {
+         max-width: 100%;
+      }
+   }
+}
+
 /* ===================  =================== */
 /* ===================  =================== */
 /* ===================  =================== */
